@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  fbdl:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fbdl
+    image: fbdl
+    volumes:
+      - .:/code
